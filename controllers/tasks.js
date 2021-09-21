@@ -5,7 +5,7 @@ const db = low(adapter);
 const { nanoid } = require("nanoid");
 // GET
 const getTasks = (req, res) => {
-  const tasks = db.get("products");
+  const tasks = db.get("tasks");
 
   res.jsonp({
     tasks,
@@ -42,16 +42,8 @@ const createTask = (req, res) => {
     newTask,
   });
 };
-const toggleTaskStatus = (req, res) => {
-  const { id, isDone } = req.body;
-  const task = db.get("tasks").find({ id }).assign({ isDone }).value();
 
-  res.status(200).jsonp({
-    isDone,
-  });
-};
 module.exports = {
   getTasks,
   createTask,
-  toggleTaskStatus,
 };

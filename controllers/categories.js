@@ -4,10 +4,10 @@ const adapter = new FileSync("db.json");
 const db = low(adapter);
 // GET
 const getCategories = (req, res) => {
-  const tasks = db.get("categories");
+  const categories = db.get("categories");
 
   res.jsonp({
-    tasks,
+    categories,
   });
 };
 module.exports = {
