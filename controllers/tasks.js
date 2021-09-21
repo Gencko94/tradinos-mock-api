@@ -38,7 +38,7 @@ const createTask = (req, res) => {
     })
     .write();
   const newTask = db.get("tasks").find({ id: newId }).value();
-  res.status(201).jsonp({
+  res.jsonp({
     newTask,
   });
 };

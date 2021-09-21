@@ -7,7 +7,7 @@ const activateTask = (req, res) => {
 
   const task = db.get("tasks").find({ id }).assign({ isDone }).write();
 
-  res.status(200).jsonp({
+  res.jsonp({
     id,
     isDone: task.isDone,
   });
