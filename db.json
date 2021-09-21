@@ -1,0 +1,65 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "House Holds",
+      "color": "#B27b7b"
+    },
+    {
+      "id": 2,
+      "name": "Home work",
+      "color": "#15e263"
+    }
+  ],
+  "tasks": [
+    {
+      "deadline": "2021-09-21T03:55:05.410Z",
+      "title": "testing task",
+      "description": "dsadsadsadsa",
+      "categories": [],
+      "subtasks": [],
+      "isDone": false,
+      "created_at": "2021-09-21T03:55:09.258Z",
+      "id": 1
+    },
+    {
+      "deadline": "2021-09-21T03:55:16.805Z",
+      "title": "hovering task",
+      "description": "dsadsadsarwqe",
+      "categories": [],
+      "subtasks": [],
+      "isDone": false,
+      "created_at": "2021-09-21T03:55:22.240Z",
+      "id": 2
+    },
+    {
+      "deadline": "2021-09-21T04:11:52.964Z",
+      "title": "With Categories",
+      "description": "With categories",
+      "categories": [
+        2,
+        1
+      ],
+      "subtasks": [
+        {
+          "name": "subtask 1"
+        }
+      ],
+      "isDone": false,
+      "created_at": "2021-09-21T04:12:48.463Z",
+      "id": 3
+    },
+    {
+      "deadline": "2021-09-30T04:17:58.000Z",
+      "title": "Some Dumb task",
+      "description": "some dumb description",
+      "categories": [
+        1
+      ],
+      "subtasks": [],
+      "isDone": false,
+      "created_at": "2021-09-21T04:18:28.499Z",
+      "id": 4
+    }
+  ]
+}
