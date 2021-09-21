@@ -17,9 +17,7 @@ server.patch("/activate-task", activateTask);
 server.get("/tasks", getTasks);
 server.post("/tasks", createTask);
 server.get("/categories", getCategories);
-server.get("/hello", (req, res) => {
-  res.jsonp({ hello: "hello" });
-});
+
 server.use(router);
 
 server.listen(PORT, () => {

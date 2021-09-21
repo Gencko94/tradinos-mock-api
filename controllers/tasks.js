@@ -24,7 +24,7 @@ const createTask = (req, res) => {
     isDone,
   } = req.body;
   const products = db.get("tasks");
-  const newId = nanoId(3);
+  const newId = nanoid(3);
   products
     .push({
       id: newId,
