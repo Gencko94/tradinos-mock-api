@@ -21,5 +21,5 @@ server.get("/categories", getCategories);
 server.use(router);
 
 server.listen(PORT, () => {
-  console.log("JSON Server is running");
+  console.log("JSON Server is running", PORT);
 });
